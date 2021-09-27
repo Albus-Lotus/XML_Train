@@ -12,7 +12,6 @@ public class Main {
         RailcarsDOMParser domParser = new RailcarsDOMParser();
         domParser.parseListRailcars(FILE_PATH_TO_READ);
         Train train = new Train(domParser.getRailcars());
-        System.out.println(train);
         TrainXMLTransform trainXMLTransform = new TrainXMLTransform();
         trainXMLTransform.createXMLTrain(FILE_PATH_TO_WRITE, train);
     }
